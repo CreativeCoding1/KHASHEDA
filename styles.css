@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Bast';
+    src: url('fonts/Bastardo V2 SemiBold.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    background-color: #dadada;
+    padding: 4pt;
+    overflow: hidden;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.marquee-container {
+    /* position: absolute; */
+    top: 0;
+    right: 0; /* Align to the right */
+    left: 0; /* Take full width */
+    /* display: flex; */
+}
+
+
+.Bast {
+    font-family: 'Bast', sans-serif;
+    font-size: 30pt;
+    color:black;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    white-space: nowrap;
+     margin-left: auto;
+     height: 10vh;
+}
+
+.modeText {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 40;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 30pt;
+    font-family: 'Bast', sans-serif;
+    text-align: left;
+}
+
+.modeText:hover {
+    background:  #dadada;
+    border-radius: 350px;
+    transition: text-decoration 2s ease-out 100ms; /* Add semicolon here */
+    transition: box-shadow 2s ease-out 100ms; /* Add semicolon here */
+
+    box-shadow: 0 0 var(--shadow-size, 30px) #3700ff;
+}
+
+.modeText.active {
+    color: #3700ff;
+    stroke:#3700ff;
+    stroke-width: 20;
+    border-radius: 350px;
+    box-shadow: 0 0 var(--shadow-size, 30px) #3700ff; /* Full opacity */
+}
+
+
+.iframe {
+    position: fixed;
+    top: 15vh;
+    width: 100%;
+    height: 150vh;
+    border-right: 50%;
+    border: none;
+    border-radius: 25px;
+}
+
+.blurry-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 0.5); /* Semi-transparent green background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    z-index: 0; /* Place behind everything else */
+}
