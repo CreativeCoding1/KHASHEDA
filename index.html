@@ -1,40 +1,24 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Khasheda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONT-FONT</title>
+    <link rel="icon" type="image/x-icon" href="/images/">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js" integrity="sha512-d6sc8kbZEtA2LwB9m/ck0FhvyUwVfdmvTeyJRprmj7Wg9wRFtHDIpr6qk4g/y3Ix3O9I6KHIv6SGu9f7RaP1Gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    
 </head>
+
 <body>
-    <header>
-        <div class="marquee-container">
-            <!-- <marquee class="Bast" direction="right" scrollamount="20">Ahlannnnn!@ fontAhlannnnn!@ font Ahlannnnn!@ font Ahlannnnn!@ font</marquee> -->
-            <marquee class="Bast" direction="left"scrollamount="20">Ahlannnnn!KHASHEDA@Ahlannnnn!KHASHEDA@Ahlannnnn!@KHASHEDAhlannnnn!@KHASHEDAاهلااااااهلااااااهلااااااهلااااا</marquee>
-            <div class="block">
-                <p class="modeText" onclick="setMode('sketch-01.html', this)"><span>/</span>Mode 1 </p>
-                <p class="modeText" onclick="setMode('sketch-02.html', this)"><span>/</span>Mode 2 </p>
-            </div>
-        </div>
-     
-     
-    </header>
 
-    <iframe id="sketch-loader" class="iframe" src="sketch-01.html"></iframe>
-
-    <script>
-        function setMode(value, element) {
-            console.log(value);
-            document.getElementById('sketch-loader').src = value;
-
-            var modeTextElements = document.querySelectorAll('.modeText');
-            modeTextElements.forEach(function(el) {
-                el.classList.remove('active');
-            });
-
-            // Add 'active' class to the clicked element
-            element.classList.add('active');
-        }
-    </script>
+    <!-- <div class="left"><marquee width="100%" direction="right" height="100px">
+        This is a sample scrolling text that has scrolls texts to the right.
+        Ahlan w Sahlan! </marquee></div>
+    <div class="right suisse">For Reset press "R"</div>
+    <div class="right">
+ 
+    </div> -->
+ 
 </body>
 </html>
